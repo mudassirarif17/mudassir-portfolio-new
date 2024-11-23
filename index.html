@@ -77,14 +77,14 @@
     <div class="navbar bg-white shadow-gray-300 shadow sticky top-0 z-10">
         <div class="sub-navbar flex w-[90vw] md:w-[80vw] mx-auto justify-between h-[10vh] md:h-[12vh] items-center">
             <div class="logo cursor-pointer">
-                <h1 class="text-[#0DB75F] text-3xl font-medium"><span
-                        class="bg-[#0DB75F] text-white px-3 py-0 rounded-md mr-2">m</span>Portfolio</h1>
+                <a href="#home"><h1 class="text-[#0DB75F] text-3xl font-medium"><span
+                class="bg-[#0DB75F] text-white px-3 py-0 rounded-md mr-2">m</span>Portfolio</h1></a>
             </div>
             <ul class="nav-items hidden md:flex space-x-5 cursor-pointer text-xl font-medium">
-                <li>About</li>
-                <li>Skills</li>
-                <li>Portfolio</li>
-                <li>Testimonial</li>
+                <a href="#about"><li>About</li></a>
+                <a href="#experience"><li>Experience</li></a>
+                <a href="#projects"><li>Projects</li></a>
+                <a href="#contect"><li>Contacts</li></a>
             </ul>
             <div class="cv-d hidden md:block">
                 <button class="bg-[#0DB75F] font-medium text-white px-5 py-2 rounded-lg ">Download CV</button>
@@ -94,24 +94,26 @@
             </div>
         </div>
     </div>
+
+    <!-- Mobile  -->
     <ul id="mbl-nav" class="mbl-nav bg-white md:hidden fixed top-[-280px] w-[100vw] z-[30] sliding">
         <ul class="nav-items cursor-pointer px-5 pb-5">
-            <li class="py-5 text-xl font-medium">About</li>
-            <li class="py-5 text-xl font-medium">Skills</li>
-            <li class="py-5 text-xl font-medium">Portfolio</li>
-            <li class="py-5 text-xl font-medium">Testimonial</li>
+            <a href="#about"><li class="py-5 text-xl font-medium">About</li></a>
+            <a href="#experience"><li class="py-5 text-xl font-medium">Skills</li></a>
+            <a href="#projects"><li class="py-5 text-xl font-medium">Portfolio</li></a>
+            <a href="#contect"><li class="py-5 text-xl font-medium">Testimonial</li></a>
         </ul>
     </ul>
 
     <!-- hero -->
-    <div class="hero">
+    <div id="home" class="hero">
         <div class="sub-hero md:w-[80vw] w-[90vw] mx-auto h-[75vh] flex md:flex-row flex-col-reverse items-center justify-between">
             <div class="sub-hero-left mt-16 md:mt-0 md:w-[60%]">
                 <div class="desc flex flex-col items-center md:items-start">
                     <p class="text-[#0DB75F] text-xl font-medium mb-2 text-center">Welcome</p>
-                    <h1 class="text-3xl md:text-6xl font-bold mb-2 text-center">I have <span class="text-[#0DB75F]">Creative</span></h1>
-                    <h1 class="text-3xl md:text-6xl font-bold mb-2 text-center"><span class="text-[#0DB75F]">Design</span> Experience</h1>
-                    <p class="my-5 text-lg text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugiat
+                    <h1 class="text-3xl md:text-6xl font-bold mb-2 text-center">I am<span class="text-[#0DB75F]"> Mudassir</span></h1>
+                    <h1 class="text-3xl md:text-6xl font-bold mb-2 text-center"><span class="text-[#0DB75F]">Web</span> Developer</h1>
+                    <p class="my-5 text-lg text-center md:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugiat
                         sint nemo molestias deleniti quas, quia recusandae autem veritatis quaerat quibusdam odio eius
                     </p>
                     <button class="bg-[#0DB75F] font-medium text-white px-5 py-2 rounded-lg ">Contact Me</button>
@@ -121,95 +123,6 @@
                 <div class="bg-[#0DB75F] w-[30vh] h-[30vh] md:h-[40vh] md:w-[35vh] relative">
                     <div class="md:h-[40vh] w-[30vh] h-[30vh] md:w-[35vh] border-4 border-black absolute top-10 right-10">
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Skills -->
-    <div class="skills my-20">
-        <div class="sub-skills w-[80vw] mx-auto flex md:flex-row flex-col justify-between items-center">
-
-            <div class="sub-skills-left md:w-[55%]">
-                <div class="desc">
-                    <p class="text-[#0DB75F] text-xl font-medium mb-2">My Skills</p>
-                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Why Hire Me For Your</h1>
-                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Next <span class="text-[#0DB75F]">Project?</span></h1>
-                    <p class="my-5 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugiat
-                        sint nemo molestias deleniti quas, quia recusandae autem veritatis quaerat </p>
-                    <button class="bg-[#0DB75F] font-medium text-white px-5 py-2 rounded-lg ">Hire Me</button>
-                </div>
-            </div>
-
-            <div class="sub-skills-right w-[100%] md:w-[40%] space-y-5 mt-5 md:mt-0">
-
-                <div class="skill-card cursor-pointer bg-white shadow-gray-200 shadow-xl py-4 px-5 rounded-xl">
-                    <div class="icon">
-                        <i class="fa-regular fa-gem text-[#0DB75F] text-3xl "></i>
-                    </div>
-                    <div class="desc">
-                        <h1 class="text-2xl font-medium">Frontend Development</h1>
-                        <p class="font-light text-sm py-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Incidunt repudiandae molestias earum corporis quasi autem sunt, aliquid.</p>
-                    </div>
-                </div>
-
-                <div class="skill-card cursor-pointer bg-white shadow-gray-200 shadow-xl py-4 px-5 rounded-xl">
-                    <div class="icon">
-                        <i class="fa-solid fa-code text-[#0DB75F] text-3xl "></i>
-                    </div>
-                    <div class="desc">
-                        <h1 class="text-2xl font-medium">Backend Development</h1>
-                        <p class="font-light text-sm py-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Incidunt repudiandae molestias earum corporis quasi autem sunt, aliquid.</p>
-                    </div>
-                </div>
-
-                <div class="skill-card cursor-pointer bg-white shadow-gray-200 shadow-xl py-4 px-5 rounded-xl">
-                    <div class="icon">
-                        <i class="fa-solid fa-database text-[#0DB75F] text-3xl "></i>
-                    </div>
-                    <div class="desc">
-                        <h1 class="text-2xl font-medium">Database Design</h1>
-                        <p class="font-light text-sm py-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            Incidunt repudiandae molestias earum corporis quasi autem sunt, aliquid.</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Projects -->
-    <div class="projects">
-        <div class="sub-projects w-[90vw] md:w-[80vw] mx-auto flex md:flex-row flex-col  justify-between items-center">
-            <div class="sub-projects-left md:w-[55%]">
-                <div class="desc">
-                    <p class="text-[#0DB75F] text-xl font-medium mb-2">Experience</p>
-                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Professional Working</h1>
-                    <h1 class="text-3xl md:text-4xl font-bold mb-2"><span class="text-[#0DB75F]">Experience</span></h1>
-                    <p class="my-5 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugiat
-                        sint nemo molestias deleniti quas, quia recusandae autem veritatis quaerat </p>
-
-                </div>
-            </div>
-
-            <div class="sub-projects-rights md:w-[40%] space-x-5 gap-y-3">
-                <div class="cards cursor-pointer bg-white shadow-gray-300 shadow-2xl rounded-xl py-10 px-6">
-                    <div class="logo flex justify-center mb-2">
-                        <img class="w-[100px] h-[100px]" src="./images//alogo.png" alt="">
-                    </div>
-                    <div class="desc">
-                        <h1 class="text-2xl">IT Instructor, Aptech Pakistan</h1>
-                        <p class="text-sm py-2">June, 2023 - Present</p>
-                        <div class="px-5 text-sm">
-                            <li>Worked on Frontend Technologies (HTML, CSS, JS, React.JS, Next.JS, Tailwind Css,
-                                Material UI)</li>
-                            <li>Worked on Backend Technologies (PHP, Laravel, Express.JS, Next.JS )</li>
-                            <li>Worked on Database (MYSQL, Mongo db, SQl Server)</li>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -339,6 +252,179 @@
         </div>
     </div>
 
+    <!-- Skills -->
+    <div id="about" class="skills my-10">
+        <div class="sub-skills w-[80vw] mx-auto flex md:flex-row flex-col justify-between items-center">
+
+            <div class="sub-skills-left md:w-[55%]">
+                <div class="desc">
+                    <p class="text-[#0DB75F] text-xl font-medium mb-2">My Skills</p>
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Why Hire Me For Your</h1>
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Next <span class="text-[#0DB75F]">Project?</span></h1>
+                    <p class="my-5 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugiat
+                        sint nemo molestias deleniti quas, quia recusandae autem veritatis quaerat </p>
+                    <button class="bg-[#0DB75F] font-medium text-white px-5 py-2 rounded-lg ">Hire Me</button>
+                </div>
+            </div>
+
+            <div class="sub-skills-right w-[100%] md:w-[40%] space-y-5 mt-5 md:mt-0">
+
+                <div class="skill-card cursor-pointer bg-white shadow-gray-200 shadow-xl py-4 px-5 rounded-xl">
+                    <div class="icon">
+                        <i class="fa-regular fa-gem text-[#0DB75F] text-3xl "></i>
+                    </div>
+                    <div class="desc">
+                        <h1 class="text-2xl font-medium">Frontend Development</h1>
+                        <p class="font-light text-sm py-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt repudiandae molestias earum corporis quasi autem sunt, aliquid.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card cursor-pointer bg-white shadow-gray-200 shadow-xl py-4 px-5 rounded-xl">
+                    <div class="icon">
+                        <i class="fa-solid fa-code text-[#0DB75F] text-3xl "></i>
+                    </div>
+                    <div class="desc">
+                        <h1 class="text-2xl font-medium">Backend Development</h1>
+                        <p class="font-light text-sm py-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt repudiandae molestias earum corporis quasi autem sunt, aliquid.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card cursor-pointer bg-white shadow-gray-200 shadow-xl py-4 px-5 rounded-xl">
+                    <div class="icon">
+                        <i class="fa-solid fa-database text-[#0DB75F] text-3xl "></i>
+                    </div>
+                    <div class="desc">
+                        <h1 class="text-2xl font-medium">Database Design</h1>
+                        <p class="font-light text-sm py-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Incidunt repudiandae molestias earum corporis quasi autem sunt, aliquid.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <div id="experience" class="projects">
+        <div class="sub-projects w-[90vw] md:w-[80vw] mx-auto flex md:flex-row flex-col  justify-between items-center">
+            <div class="sub-projects-left md:w-[55%]">
+                <div class="desc">
+                    <p class="text-[#0DB75F] text-xl font-medium mb-2">Experience</p>
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Professional Working</h1>
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2"><span class="text-[#0DB75F]">Experience</span></h1>
+                    <p class="my-5 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugiat
+                        sint nemo molestias deleniti quas, quia recusandae autem veritatis quaerat </p>
+
+                </div>
+            </div>
+
+            <div class="sub-projects-rights md:w-[40%] space-x-5 gap-y-3">
+                <div class="cards cursor-pointer bg-white shadow-gray-300 shadow-2xl rounded-xl py-10 px-6">
+                    <div class="logo flex justify-center mb-2">
+                        <img class="w-[100px] h-[100px]" src="./images//alogo.png" alt="">
+                    </div>
+                    <div class="desc">
+                        <h1 class="text-2xl">IT Instructor, Aptech Pakistan</h1>
+                        <p class="text-sm py-2">June, 2023 - Present</p>
+                        <div class="px-5 text-sm">
+                            <li>Worked on Frontend Technologies (HTML, CSS, JS, React.JS, Next.JS, Tailwind Css,
+                                Material UI)</li>
+                            <li>Worked on Backend Technologies (PHP, Laravel, Express.JS, Next.JS )</li>
+                            <li>Worked on Database (MYSQL, Mongo db, SQl Server)</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- projects -->
+    <div id="projects" class="what-we-do pt-10">
+        <div class="top">
+            <h1 class="text-center text-[#0DB75F] text-3xl md:text-5xl font-bold py-5">What I Do</h1>
+            <h1 class="text-center text-3xl md:text-5xl font-bold pb-2">Latest Project</h1>
+        </div>
+
+        <div class="btm slider w-[90vw] md:w-[80vw] mx-auto  my-8">
+            <div
+                class="card cursor-pointer w-[100%] md:w-[26vw] hover:bg-[#0DB75F] bg-[#000] h-[55vh] md:h-[59vh] rounded-lg  mr-5">
+                <div class="w-[93%] mx-auto">
+                    <img class="pt-4 pb-3 rounded-xl" src="https://themedismportfolio.netlify.app/static/media/tuitional.33f58cf720567662157b.png" alt="">
+                </div>
+                <div class="desc text-white">
+                    <h1 class="text-xl font-bold mb-2 px-4">Tuitional Education</h1>
+                    <p class="px-5 leading-6 text-sm">This is a project made to learn the latest languages by building an app.</p>
+                </div>
+                <div class="tech text-white flex justify-between px-4 mt-5">
+                    <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">React JS</div>
+                    <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">Tailwind</div>
+                </div>
+                <div class="source demo flex justify-center gap-2 cursor-pointer text-white mt-3 mb-4">
+                    <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">Source</div>
+                    <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">Demo</div>
+                </div>
+            </div>
+            <div
+                class="card cursor-pointer w-[100%] md:w-[26vw] hover:bg-[#0DB75F] bg-[#000] h-[55vh] md:h-[59vh] rounded-lg  mr-5">
+                <div class="w-[93%] mx-auto">
+                    <img class="pt-4 pb-3 rounded-xl" src="https://themedismportfolio.netlify.app/static/media/tuitional.33f58cf720567662157b.png" alt="">
+                </div>
+                <div class="desc text-white">
+                    <h1 class="text-xl font-bold mb-2 px-4">Tuitional Education</h1>
+                    <p class="px-5 leading-6 text-sm">This is a project made to learn the latest languages by building an app.</p>
+                </div>
+                <div class="tech text-white flex justify-between px-4 mt-5">
+                    <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">React JS</div>
+                    <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">Tailwind</div>
+                </div>
+                <div class="source demo flex justify-center gap-2 cursor-pointer text-white mt-3 mb-4">
+                    <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">Source</div>
+                    <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">Demo</div>
+                </div>
+            </div>
+            <div
+                class="card cursor-pointer w-[100%] md:w-[26vw] hover:bg-[#0DB75F] bg-[#000] h-[55vh] md:h-[59vh] rounded-lg  mr-5">
+                <div class="w-[93%] mx-auto">
+                    <img class="pt-4 pb-3 rounded-xl" src="https://themedismportfolio.netlify.app/static/media/tuitional.33f58cf720567662157b.png" alt="">
+                </div>
+                <div class="desc text-white">
+                    <h1 class="text-xl font-bold mb-2 px-4">Tuitional Education</h1>
+                    <p class="px-5 leading-6 text-sm">This is a project made to learn the latest languages by building an app.</p>
+                </div>
+                <div class="tech text-white flex justify-between px-4 mt-5">
+                    <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">React JS</div>
+                    <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">Tailwind</div>
+                </div>
+                <div class="source demo flex justify-center gap-2 cursor-pointer text-white mt-3 mb-4">
+                    <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">Source</div>
+                    <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">Demo</div>
+                </div>
+            </div>
+            <div
+                class="card cursor-pointer w-[100%] md:w-[26vw] hover:bg-[#0DB75F] bg-[#000] h-[55vh] md:h-[59vh] rounded-lg  mr-5">
+                <div class="w-[93%] mx-auto">
+                    <img class="pt-4 pb-3 rounded-xl" src="https://themedismportfolio.netlify.app/static/media/tuitional.33f58cf720567662157b.png" alt="">
+                </div>
+                <div class="desc text-white">
+                    <h1 class="text-xl font-bold mb-2 px-4">Tuitional Education</h1>
+                    <p class="px-5 leading-6 text-sm">This is a project made to learn the latest languages by building an app.</p>
+                </div>
+                <div class="tech text-white flex justify-between px-4 mt-5">
+                    <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">React JS</div>
+                    <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">Tailwind</div>
+                </div>
+                <div class="source demo flex justify-center gap-2 cursor-pointer text-white mt-3 mb-4">
+                    <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">Source</div>
+                    <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">Demo</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
@@ -369,6 +455,31 @@
                 }
             ]
         });
+
+        $('.slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
 
         function mblMenuHandler(){
             if(document.getElementById('mbl-nav').classList.contains('top-[-280px]')){
