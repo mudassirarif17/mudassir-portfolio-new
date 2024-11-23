@@ -74,8 +74,8 @@
 
 <body>
     <!-- Navbar -->
-    <div class="navbar bg-white shadow-gray-100 shadow sticky top-0 z-10">
-        <div class="sub-navbar flex w-[90vw] md:w-[80vw] mx-auto justify-between h-[12vh] items-center">
+    <div class="navbar bg-white shadow-gray-300 shadow sticky top-0 z-10">
+        <div class="sub-navbar flex w-[90vw] md:w-[80vw] mx-auto justify-between h-[10vh] md:h-[12vh] items-center">
             <div class="logo cursor-pointer">
                 <h1 class="text-[#0DB75F] text-3xl font-medium"><span
                         class="bg-[#0DB75F] text-white px-3 py-0 rounded-md mr-2">m</span>Portfolio</h1>
@@ -89,8 +89,19 @@
             <div class="cv-d hidden md:block">
                 <button class="bg-[#0DB75F] font-medium text-white px-5 py-2 rounded-lg ">Download CV</button>
             </div>
+            <div onclick="mblMenuHandler()" class="bars border-2 rounded-lg md:hidden border-gray-200 px-3 py-1">
+                <i class="fa-solid fa-bars text-3xl text-[#0DB75F]"></i>
+            </div>
         </div>
     </div>
+    <ul id="mbl-nav" class="mbl-nav bg-white md:hidden fixed top-[-280px] w-[100vw] z-[30] sliding">
+        <ul class="nav-items cursor-pointer px-5 pb-5">
+            <li class="py-5 text-xl font-medium">About</li>
+            <li class="py-5 text-xl font-medium">Skills</li>
+            <li class="py-5 text-xl font-medium">Portfolio</li>
+            <li class="py-5 text-xl font-medium">Testimonial</li>
+        </ul>
+    </ul>
 
     <!-- hero -->
     <div class="hero">
@@ -358,6 +369,14 @@
                 }
             ]
         });
+
+        function mblMenuHandler(){
+            if(document.getElementById('mbl-nav').classList.contains('top-[-280px]')){
+                document.getElementById('mbl-nav').classList.remove('top-[-280px]')
+            }else{
+                document.getElementById('mbl-nav').classList.add('top-[-280px]')
+            }
+        }
 
     </script>
 </body>
