@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <title>Maddy - Portfolio</title>
+
     <style>
         .slider-tech .slick-slide {
             height: 180px;
@@ -45,29 +46,14 @@
             border-radius: 100%;
         }
 
+        .slick-prev {
+            display: none !important;
+        }
+
         .slick-next {
-            right: -25px;
-            color: black;
-            background-color: black;
-            border-radius: 100%;
+            display: none !important;
         }
 
-        .slick-next:hover {
-
-            color: black;
-            background-color: black;
-            border-radius: 100%;
-        }
-
-        @media screen and (max-width: 1024px) {
-            .slick-prev {
-                display: none !important;
-            }
-
-            .slick-next {
-                display: none !important;
-            }
-        }
     </style>
 
 </head>
@@ -77,14 +63,24 @@
     <div class="navbar bg-white shadow-gray-300 shadow sticky top-0 z-10">
         <div class="sub-navbar flex w-[90vw] md:w-[80vw] mx-auto justify-between h-[10vh] md:h-[12vh] items-center">
             <div class="logo cursor-pointer">
-                <a href="#home"><h1 class="text-[#0DB75F] text-3xl font-medium"><span
-                class="bg-[#0DB75F] text-white px-3 py-0 rounded-md mr-2">m</span>Portfolio</h1></a>
+                <a href="#home">
+                    <h1 class="text-[#0DB75F] text-3xl font-medium"><span
+                            class="bg-[#0DB75F] text-white px-3 py-0 rounded-md mr-2">m</span>Portfolio</h1>
+                </a>
             </div>
             <ul class="nav-items hidden md:flex space-x-5 cursor-pointer text-xl font-medium">
-                <a href="#about"><li>About</li></a>
-                <a href="#experience"><li>Experience</li></a>
-                <a href="#projects"><li>Projects</li></a>
-                <a href="#contect"><li>Contacts</li></a>
+                <a href="#about">
+                    <li>About</li>
+                </a>
+                <a href="#experience">
+                    <li>Experience</li>
+                </a>
+                <a href="#projects">
+                    <li>Projects</li>
+                </a>
+                <a href="#contect">
+                    <li>Contacts</li>
+                </a>
             </ul>
             <div class="cv-d hidden md:block">
                 <button class="bg-[#0DB75F] font-medium text-white px-5 py-2 rounded-lg ">Download CV</button>
@@ -98,22 +94,34 @@
     <!-- Mobile  -->
     <ul id="mbl-nav" class="mbl-nav bg-white md:hidden fixed top-[-280px] w-[100vw] z-[30] sliding">
         <ul class="nav-items cursor-pointer px-5 pb-5">
-            <a href="#about"><li class="py-5 text-xl font-medium">About</li></a>
-            <a href="#experience"><li class="py-5 text-xl font-medium">Skills</li></a>
-            <a href="#projects"><li class="py-5 text-xl font-medium">Portfolio</li></a>
-            <a href="#contect"><li class="py-5 text-xl font-medium">Testimonial</li></a>
+            <a href="#about">
+                <li class="py-5 text-xl font-medium">About</li>
+            </a>
+            <a href="#experience">
+                <li class="py-5 text-xl font-medium">Skills</li>
+            </a>
+            <a href="#projects">
+                <li class="py-5 text-xl font-medium">Portfolio</li>
+            </a>
+            <a href="#contect">
+                <li class="py-5 text-xl font-medium">Testimonial</li>
+            </a>
         </ul>
     </ul>
 
     <!-- hero -->
     <div id="home" class="hero">
-        <div class="sub-hero md:w-[80vw] w-[90vw] mx-auto h-[75vh] flex md:flex-row flex-col-reverse items-center justify-between">
+        <div
+            class="sub-hero md:w-[80vw] w-[90vw] mx-auto h-[75vh] flex md:flex-row flex-col-reverse items-center justify-between">
             <div class="sub-hero-left mt-16 md:mt-0 md:w-[60%]">
                 <div class="desc flex flex-col items-center md:items-start">
                     <p class="text-[#0DB75F] text-xl font-medium mb-2 text-center">Welcome</p>
-                    <h1 class="text-3xl md:text-6xl font-bold mb-2 text-center">I am<span class="text-[#0DB75F]"> Mudassir</span></h1>
-                    <h1 class="text-3xl md:text-6xl font-bold mb-2 text-center"><span class="text-[#0DB75F]">Web</span> Developer</h1>
-                    <p class="my-5 text-lg text-center md:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugiat
+                    <h1 class="text-3xl md:text-6xl font-bold mb-2 text-center">I am<span class="text-[#0DB75F]">
+                            Mudassir</span></h1>
+                    <h1 class="text-3xl md:text-6xl font-bold mb-2 text-center"><span
+                            class="text-[#0DB75F] myfont">Web</span> Developer</h1>
+                    <p class="my-5 text-lg text-center md:text-left">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Perferendis fugiat
                         sint nemo molestias deleniti quas, quia recusandae autem veritatis quaerat quibusdam odio eius
                     </p>
                     <button class="bg-[#0DB75F] font-medium text-white px-5 py-2 rounded-lg ">Contact Me</button>
@@ -121,7 +129,8 @@
             </div>
             <div class="sub-hero-right mt-10 md:mt-0">
                 <div class="bg-[#0DB75F] w-[30vh] h-[30vh] md:h-[40vh] md:w-[35vh] relative">
-                    <div class="md:h-[40vh] w-[30vh] h-[30vh] md:w-[35vh] border-4 border-black absolute top-10 right-10">
+                    <div
+                        class="md:h-[40vh] w-[30vh] h-[30vh] md:w-[35vh] border-4 border-black absolute top-10 right-10">
 
                     </div>
                 </div>
@@ -132,7 +141,8 @@
     <!-- Technologies -->
     <div id="country" class="choose-countries mt-10 md:mt-20">
         <div class="top">
-            <h1 class="text-center text-3xl md:text-5xl font-bold mb-2">Latest <span class="text-[#0DB75F]">Technologies <br class="md:hidden"></span> Used
+            <h1 class="text-center text-3xl md:text-5xl font-bold mb-2">Latest <span class="text-[#0DB75F]">Technologies
+                    <br class="md:hidden"></span> Used
                 By <span class="text-[#0DB75F]">Me</span></h1>
         </div>
 
@@ -260,7 +270,8 @@
                 <div class="desc">
                     <p class="text-[#0DB75F] text-xl font-medium mb-2">My Skills</p>
                     <h1 class="text-3xl md:text-4xl font-bold mb-2">Why Hire Me For Your</h1>
-                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Next <span class="text-[#0DB75F]">Project?</span></h1>
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Next <span class="text-[#0DB75F]">Project?</span>
+                    </h1>
                     <p class="my-5 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis fugiat
                         sint nemo molestias deleniti quas, quia recusandae autem veritatis quaerat </p>
                     <button class="bg-[#0DB75F] font-medium text-white px-5 py-2 rounded-lg ">Hire Me</button>
@@ -349,14 +360,18 @@
         </div>
 
         <div class="btm slider w-[90vw] md:w-[80vw] mx-auto  my-8">
+
             <div
                 class="card cursor-pointer w-[100%] md:w-[26vw] hover:bg-[#0DB75F] bg-[#000] h-[55vh] md:h-[59vh] rounded-lg  mr-5">
                 <div class="w-[93%] mx-auto">
-                    <img class="pt-4 pb-3 rounded-xl" src="https://themedismportfolio.netlify.app/static/media/tuitional.33f58cf720567662157b.png" alt="">
+                    <img class="pt-4 pb-3 rounded-xl"
+                        src="https://themedismportfolio.netlify.app/static/media/tuitional.33f58cf720567662157b.png"
+                        alt="">
                 </div>
                 <div class="desc text-white">
                     <h1 class="text-xl font-bold mb-2 px-4">Tuitional Education</h1>
-                    <p class="px-5 leading-6 text-sm">This is a project made to learn the latest languages by building an app.</p>
+                    <p class="px-5 leading-6 text-sm">This is a project made to learn the latest languages by building
+                        an app.</p>
                 </div>
                 <div class="tech text-white flex justify-between px-4 mt-5">
                     <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">React JS</div>
@@ -367,14 +382,18 @@
                     <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">Demo</div>
                 </div>
             </div>
+
             <div
                 class="card cursor-pointer w-[100%] md:w-[26vw] hover:bg-[#0DB75F] bg-[#000] h-[55vh] md:h-[59vh] rounded-lg  mr-5">
                 <div class="w-[93%] mx-auto">
-                    <img class="pt-4 pb-3 rounded-xl" src="https://themedismportfolio.netlify.app/static/media/tuitional.33f58cf720567662157b.png" alt="">
+                    <img class="pt-4 pb-3 rounded-xl"
+                        src="https://themedismportfolio.netlify.app/static/media/tuitional.33f58cf720567662157b.png"
+                        alt="">
                 </div>
                 <div class="desc text-white">
                     <h1 class="text-xl font-bold mb-2 px-4">Tuitional Education</h1>
-                    <p class="px-5 leading-6 text-sm">This is a project made to learn the latest languages by building an app.</p>
+                    <p class="px-5 leading-6 text-sm">This is a project made to learn the latest languages by building
+                        an app.</p>
                 </div>
                 <div class="tech text-white flex justify-between px-4 mt-5">
                     <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">React JS</div>
@@ -385,14 +404,18 @@
                     <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">Demo</div>
                 </div>
             </div>
+
             <div
                 class="card cursor-pointer w-[100%] md:w-[26vw] hover:bg-[#0DB75F] bg-[#000] h-[55vh] md:h-[59vh] rounded-lg  mr-5">
                 <div class="w-[93%] mx-auto">
-                    <img class="pt-4 pb-3 rounded-xl" src="https://themedismportfolio.netlify.app/static/media/tuitional.33f58cf720567662157b.png" alt="">
+                    <img class="pt-4 pb-3 rounded-xl"
+                        src="https://themedismportfolio.netlify.app/static/media/tuitional.33f58cf720567662157b.png"
+                        alt="">
                 </div>
                 <div class="desc text-white">
                     <h1 class="text-xl font-bold mb-2 px-4">Tuitional Education</h1>
-                    <p class="px-5 leading-6 text-sm">This is a project made to learn the latest languages by building an app.</p>
+                    <p class="px-5 leading-6 text-sm">This is a project made to learn the latest languages by building
+                        an app.</p>
                 </div>
                 <div class="tech text-white flex justify-between px-4 mt-5">
                     <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">React JS</div>
@@ -403,14 +426,18 @@
                     <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">Demo</div>
                 </div>
             </div>
+
             <div
                 class="card cursor-pointer w-[100%] md:w-[26vw] hover:bg-[#0DB75F] bg-[#000] h-[55vh] md:h-[59vh] rounded-lg  mr-5">
                 <div class="w-[93%] mx-auto">
-                    <img class="pt-4 pb-3 rounded-xl" src="https://themedismportfolio.netlify.app/static/media/tuitional.33f58cf720567662157b.png" alt="">
+                    <img class="pt-4 pb-3 rounded-xl"
+                        src="https://themedismportfolio.netlify.app/static/media/tuitional.33f58cf720567662157b.png"
+                        alt="">
                 </div>
                 <div class="desc text-white">
                     <h1 class="text-xl font-bold mb-2 px-4">Tuitional Education</h1>
-                    <p class="px-5 leading-6 text-sm">This is a project made to learn the latest languages by building an app.</p>
+                    <p class="px-5 leading-6 text-sm">This is a project made to learn the latest languages by building
+                        an app.</p>
                 </div>
                 <div class="tech text-white flex justify-between px-4 mt-5">
                     <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">React JS</div>
@@ -421,9 +448,43 @@
                     <div class="bg-[#0DB75F] px-4 rounded-xl font-semibold">Demo</div>
                 </div>
             </div>
+
         </div>
 
     </div>
+
+    <!-- Footer -->
+     <div class="footer bg-white shadow-2xl shadow-gray-400  mt-20">
+        <div class="sub footer w-[80vw] mx-auto flex justify-between h-[30vh] items-center">
+
+            <div class="footer-left">
+                <h1 class="text-4xl font-semibold text-center">Contact</h1>
+                <p class="font-light pt-2">Feel free to reach out!</p>
+            </div>
+
+            <div class="footer-right space-y-5">
+                <div class="flex gap-x-4 items-center">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope text-4xl"></i>
+                    </div>
+                    <a class="font-medium" href="mudassirinoxent@gmail.com" target="_blank">mudassirinoxent@gmail.com</a>
+                </div>
+                <div class="flex gap-x-4">
+                    <div class="icon">
+                        <i class="fa-brands fa-linkedin text-4xl"></i>
+                    </div>
+                    <a class="font-medium" href="https://www.linkedin.com/in/mudassir-arif-42a918242/" target="_blank">https://www.linkedin.com/in/mudassir-arif-42a918242/</a>
+                </div>
+                <div class="flex gap-x-4">
+                    <div class="icon">
+                        <i class="fa-brands fa-github text-4xl"></i>
+                    </div>
+                    <a class="font-medium" href="https://github.com/mudassirarif17" target="_blank">https://github.com/mudassirarif17</a>
+                </div>
+            </div>
+
+        </div>
+     </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript"
@@ -435,7 +496,7 @@
             slidesToShow: 6,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 1000,
             innerHeight: 200,
             responsive: [
                 {
@@ -457,39 +518,41 @@
         });
 
         $('.slider').slick({
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            infinite: true,
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
                     }
-                ]
-            });
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
 
-        function mblMenuHandler(){
-            if(document.getElementById('mbl-nav').classList.contains('top-[-280px]')){
+        function mblMenuHandler() {
+            if (document.getElementById('mbl-nav').classList.contains('top-[-280px]')) {
                 document.getElementById('mbl-nav').classList.remove('top-[-280px]')
-            }else{
+            } else {
                 document.getElementById('mbl-nav').classList.add('top-[-280px]')
             }
         }
 
     </script>
+
+
 </body>
 
 </html>
